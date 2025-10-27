@@ -88,17 +88,6 @@ PORT=5000
 ini
 Copy code
 VITE_API_URL=http://localhost:5000
-🧱 Docker (Optional)
-If you wish to containerize the app:
-
-bash
-Copy code
-docker build -t gis-visualizer .
-docker run -p 5000:5000 gis-visualizer
-📸 Screenshots
-Map View	Filter Functionality
-
-(Replace placeholders with your actual screenshots before submission.)
 
 🏁 Deliverables Checklist
 ✅ Source code (Node + React)
