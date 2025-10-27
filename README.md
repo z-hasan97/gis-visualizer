@@ -31,4 +31,87 @@ A mini GIS web application built with **Node.js + React + ArcGIS Maps SDK** to:
 
 ---
 
-## ⚙️ Project Structure
+## ⚙️ Setup & Run Instructions
+
+### 🧠 Backend
+```bash
+cd backend
+npm install
+npm start
+Backend runs at 👉 http://localhost:5000
+
+💻 Frontend
+bash
+Copy code
+cd frontend
+npm install
+npm run dev
+Frontend runs at 👉 http://localhost:5173
+
+⚠️ Make sure both servers are running simultaneously.
+
+🧠 How It Works
+Fetches data from ArcGIS REST APIs (FeatureServer → GeoJSON)
+
+Transforms response into GeoJSON
+
+Uses Turf.js to perform spatial containment checks (booleanPointInPolygon)
+
+Counts the number of ports by Congressional Party
+
+Visualizes the resulting GeoJSON on an interactive ArcGIS map
+
+📊 Example Output
+API Response Example:
+
+json
+Copy code
+{
+  "Democrat": 134,
+  "Republican": 98
+}
+🖥️ User Interface Flow
+Select ruling party from the dropdown (Democrat / Republican)
+
+Click “Filter”
+
+Backend performs spatial analysis and returns results
+
+Map updates dynamically with colored port symbols
+
+🧾 Environment Variables
+/backend/.env.example
+ini
+Copy code
+PORT=5000
+/frontend/.env.example
+ini
+Copy code
+VITE_API_URL=http://localhost:5000
+🧱 Docker (Optional)
+If you wish to containerize the app:
+
+bash
+Copy code
+docker build -t gis-visualizer .
+docker run -p 5000:5000 gis-visualizer
+📸 Screenshots
+Map View	Filter Functionality
+
+(Replace placeholders with your actual screenshots before submission.)
+
+🏁 Deliverables Checklist
+✅ Source code (Node + React)
+✅ .env.example files
+✅ README.md with setup guide
+✅ Public GitHub repository
+✅ Dockerfile (optional)
+
+👨‍💻 Author
+Md Zahid Hasan
+📍 GIS Developer — Assignment Submission
+📅 27 October 2025
+🔗 GitHub: @z-hasan97
+
+
+
