@@ -89,12 +89,6 @@ ini
 Copy code
 VITE_API_URL=http://localhost:5000
 
-🏁 Deliverables Checklist
-✅ Source code (Node + React)
-✅ .env.example files
-✅ README.md with setup guide
-✅ Public GitHub repository
-✅ Dockerfile (optional)
 
 👨‍💻 Author
 Md Zahid Hasan
